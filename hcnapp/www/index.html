@@ -14,6 +14,8 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    
+    <script src="lib/satellizer/satellizer.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -27,7 +29,10 @@
       <ion-header-bar class="bar-stable">
         <h1 class="title">hcn ionic blank starter</h1>
       </ion-header-bar>
-      <ion-content>
+      <ion-content ng-controller="FacebookLogin">
+  <button class="button button-calm" ng-click="authenticate('facebook')">
+  login to facebook 2 
+</button>
       </ion-content>
     </ion-pane>
   </body>
